@@ -10,13 +10,26 @@
 </head>
 <body>
     <main class="container text-center">
-        <h3 class="text-center m-5 ">台灣彩卷選號</h3>
+        <h3 class="text-center m-5 text-primary">台灣彩卷選號</h3>
         <form action="">
-            <select name="option" id="option" class="d-block mx-auto my-3 method">
+            <label for="method" class="m-4">玩法</label>
+            <select name="method" id="method" class="mx-auto my-3 method">
                 <option value="bingo">Bingo</option>
             </select>
-            <label for="" class="m-4">星數</label>
-            <input class="need" type="number" min="1" max="10" value="5">
+            <label for="option" class="m-4">星數</label>
+            <!-- <input class="need" type="number" min="1" max="10" value="5"> -->
+            <select class="need" name="option" id="option">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
             <button class="d-block mx-auto btn-info btn">送出</button>
         </form>
     </main>
