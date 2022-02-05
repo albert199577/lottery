@@ -18,6 +18,9 @@ let lottery = () => {
             num.push(random_num);
         }
     }
+    num.sort((a, b) => {
+        return a - b;
+    });
     console.log(num);
 }
 
